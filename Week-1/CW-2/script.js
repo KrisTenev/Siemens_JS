@@ -102,5 +102,4 @@ if (isCustomerVIP)
         else if (customerAge == 65){
                 priceToPay -= 60;
         }
-
 }
