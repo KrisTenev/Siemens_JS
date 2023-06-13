@@ -47,7 +47,7 @@ if(cardNumber[5] == 0)
 }
 else
 {
-    userGender = parseInt(prompt("Enter gender: 1-m, 3-f"));
+    userGender = parseInt(prompt("Enter gender: \n 1-m \n 3-f \n other"));
 
     if(userGender != 1 || userGender != 3)
     {
@@ -114,8 +114,14 @@ else {
 }
 
 //Digit 5
-var productIndex = parseInt(prompt("Select product 1-5"));
-var productByingFrequency = parseInt(prompt("How often product is have bought 1-3"));
+do {
+    var productIndex = parseInt(prompt("Select product by index: \n 1. плодове и зеленчуци \n 2. месо и месни продукти \n 3. цигари и алкохол \n 4. млечни продукти \n 5. захарни изделия."));
+} while(productIndex > 0 && productIndex <=5)
+
+do {
+    var productByingFrequency = parseInt(prompt("How often product have bought (select index): \n 1. рядко \n 2. понякога \n 3. често"));
+} while(productIndex > 0 && productIndex <=3)
+
 cardNumber[1] = productIndex + productByingFrequency;
 
 //Digit 6
