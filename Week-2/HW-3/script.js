@@ -18,7 +18,7 @@ if(userBirthDate > BOUNDARY_BIRTH_DATE)
         userAge =  currentYear - userBirthDate;
         random = Math.round(Math.random() * (7 - 1) + 1);
         cardNumber[5] = Math.round(userAge / random);
-    } while (cardNumber[5] % 2 == 0)
+    } while (cardNumber[5] % 2 == 1)
 }
 else if (userBirthDate < BOUNDARY_BIRTH_DATE)
 {
@@ -26,7 +26,7 @@ else if (userBirthDate < BOUNDARY_BIRTH_DATE)
         userAge =  currentYear - userBirthDate;
         random = Math.round(Math.random() * (7 - 1) + 1);
         cardNumber[5] = Math.round(userAge / random);
-    } while (cardNumber[5] % 2 == 1)
+    } while (cardNumber[5] % 2 == 0)
 }
 else if (userBirthDate == BOUNDARY_BIRTH_DATE)
 {
