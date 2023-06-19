@@ -1,0 +1,2 @@
+//Const
+const CONFIG_CUSTOMER_YEAR = 1965;
