@@ -93,6 +93,7 @@ operationCalculation.addEventListener('click', () => {
 
 operationClearAll.addEventListener('click', () => {
     currentOperation    = 'clear-all';
+    operand = 0;
     calculatorSum       = null;
     display.innerHTML   = calculatorSum;
 });
