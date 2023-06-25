@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+
+
+    <style>
+        #calculator-table tr td {
+            border: solid 1px #000;
+            cursor: pointer;
+            height: 15px;
+            width: 15px;
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <table id="calculator-table">
+        <tr>
+            <td style="background-color: #fff; text-align: left;"  colspan="5">
+                <div id="display"></div>
+            </td>
+        </tr>
+        <tr style="background-color: #9aebfa">
+            <td data-number="7" class="number">7</td>
+            <td data-number="8" class="number">8</td>
+            <td data-number="9" class="number">9</td>
+            <td style="background-color: #fd9090" id="operation-clear-all" >C</td>
+            <td style="background-color: #fd9090" id="operation-clear-operand"><</td>
+        </tr>
+        <tr style="background-color: #9aebfa">
+            <td data-number="4" class="number">4</td>
+            <td data-number="5" class="number">5</td>
+            <td data-number="6" class="number" id="number-6">6</td>
+            <td style="background-color: #ffde82" id="operation-sub">-</td>
+            <td style="background-color: #ffde82" id="operation-devide">/</td>
+        </tr>
+        <tr style="background-color: #9aebfa">
+            <td data-number="1" class="number" id="number-1">1</td>
+            <td data-number="2" class="number">2</td>
+            <td data-number="3" class="number">3</td>
+            <td style="background-color: #ffde82" id="operation-add">+</td>
+            <td style="background-color: #ffde82" id="operation-multiply">*</td>
+        </tr>
+        <tr>
+            <td style="background-color: #ffde82" id = "operation-calculaton" colspan="5">=</td>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+    <script src="test.runner.js"></script>
+    <script src="tests/calculator.suite.js"></script>
+</body>
+</html>
